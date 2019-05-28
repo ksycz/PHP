@@ -38,7 +38,7 @@ SAMPLE CREDIT CARD NUMBERS
 if(isset($_POST['submit'])){
 
     //assign variables (total and incrementor)
-    $number = $_POST['cc'];
+    $number = $_POST['card'];
     $total = 0;
     $i = 1;
 

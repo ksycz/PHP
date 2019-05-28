@@ -13,7 +13,7 @@
 if(isset($_POST["submit"])) {
 
 // assign post variables
-$isbn = $_POST("isbn");
+$isbn = $_POST["isbn"];
 
 // total, incrementor
 $total = 0;
@@ -24,7 +24,7 @@ $isbnDigits = str_split($isbn);
 // loop through array
 foreach($isbnDigits as $isbnDigit) {
   // update total
-  $total += $isbnDigit*$i;
+  $total += $isbnDigit * $i;
   $i++;
 }
 
